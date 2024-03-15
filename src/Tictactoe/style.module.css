@@ -1,0 +1,35 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+    background-color: rgb(1, 20, 14);
+  }
+  
+.cell {
+    width: 100px;
+  height: 100px;
+  font-size: 2em;
+  background-color: #140101;
+  color: #ddd;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+ }
+
+ .restartButton{
+    width: 100px;
+  height: 45px;
+  font-size: 1em;
+  background-color: #140101;
+  color: #ddd;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+ }
