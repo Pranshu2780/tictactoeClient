@@ -15,6 +15,7 @@ export const Tictactoe = () => {
 
   useEffect(() => {
     const socketUrl = import.meta.env.VITE_SERVER_URL;
+    console.log("siterul to connect: " + socketUrl);
     socket = io(socketUrl);
   }, []);
 
