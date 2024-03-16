@@ -15,8 +15,10 @@ export const Tictactoe = () => {
 
   useEffect(() => {
     const socketUrl = import.meta.env.VITE_SERVER_URL;
-    console.log("siterul to connect: " + socketUrl);
-    socket = io(socketUrl);
+    const localUrl = "http://localhost:3000";
+    console.log("siterul to connect: " + (socketUrl || localUrl));
+    socket = io(socketUrl || localUrl);
+    console.log("Connected: ");
   }, []);
 
   useEffect(() => {
