@@ -14,7 +14,8 @@ export const Tictactoe = () => {
   const [numClients, setNumClients] = useState(0);
 
   useEffect(() => {
-    socket = io("http://localhost:3001");
+    const socketUrl = import.meta.env.VITE_SERVER_URL;
+    socket = io(socketUrl);
   }, []);
 
   useEffect(() => {
